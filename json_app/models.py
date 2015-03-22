@@ -10,6 +10,6 @@ class Region(models.Model):
 class City(models.Model):
     name=models.CharField(max_length=20)
     region_id=models.ForeignKey(Region)
-    area=models.IntegerField(max_length=4)
+    area=models.FloatField(max_length=4, null=True, blank=True, default=None)
     def __unicode__(self):
         return self.name

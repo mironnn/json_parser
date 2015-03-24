@@ -33,49 +33,19 @@
       </style>
 
 
+
+
+      {% for city in all_cities %}
+
       <script>
+          var city = "{{city.name|safe}}"
+          var city_area = "{{city.area|safe}}"
           var chart = AmCharts.makeChart("chartdiv", {
     "type": "serial",
     "theme": "none",
     "dataProvider": [{
-        "country": "123",
-        "area": 2025
-    }, {
-        "country": "China",
-        "area": 1882
-    }, {
-        "country": "Japan",
-        "area": 1809
-    }, {
-        "country": "Germany",
-        "visits": 1322
-    }, {
-        "country": "UK",
-        "area": 1122
-    }, {
-        "country": "France",
-        "visits": 1114
-    }, {
-        "country": "India",
-        "visits": 984
-    }, {
-        "country": "Spain",
-        "visits": 711
-    }, {
-        "country": "Netherlands",
-        "area": 665
-    }, {
-        "country": "Russia",
-        "visits": 580
-    }, {
-        "country": "South Korea",
-        "visits": 443
-    }, {
-        "country": "Canada",
-        "visits": 441
-    }, {
-        "country": "Brazil",
-        "visits": 395
+        "country": city,
+        "area": city_area
     }],
     "valueAxes": [{
         "gridColor":"#FFFFFF",
@@ -111,7 +81,11 @@
       }]
 	}
 });
+          var obj = JSON.parse(chart);
+      obj['dataProvider'].push({"country":city,"area":city_area});
       </script>
+
+{% endfor %}
 
 
   </head>

@@ -33,6 +33,7 @@ def open_file(request):
                 temp_city.region_id_id = int(temp_region.id)
                 temp_city.save()
         template = "index.html"
-        all_cities = City.object.all()
-        context = {'form': form, 'all_cities': all_cities}
+        all_cities = City.objects.all()
+        # json_all_cities = json.dumps(all_cities)
+        context = {'form': form, 'all_cities': all_cities, 'json_all_cities': '''json_all_cities'''}
         return render(request, template, context)

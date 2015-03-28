@@ -9,7 +9,7 @@ from .forms import form_file
 
 def index(request):
     regions = Region.objects.all()
-    context = {'regions':regions}
+    context = {'regions': regions}
     template = "index.html"
     return render(request, template, context)
 
@@ -55,49 +55,19 @@ def open_file(request):
                         temp_city.area = float(region_cities_kv[region_city_k])
                         temp_city.region_id_id = int(t.id)
                         temp_city.save()
-
-
         template = "index.html"
-        all_regions= Region.objects.all()
-                        # my_dict = {}
-                        # l = int(len(all_cities ))
-                        # for i in range(l):
-                        #     c = City.objects.get(id=i)
-                        #     temp_dict = c.as_dict()
-                        #     my_dict[temp_dict['name']] = temp_dict['area']
-                        # print(1111111111111111111)
-                        # print(my_dict)
-                        # json_all_cities = json.dumps(all_cities)
-        context = {'form': form, 'all_regions': all_regions}
+        regions = Region.objects.all()
+        context = {'form': form, 'regions': regions}
+
         return render(request, template, context)
 
-# def load_chart(request):
-#     regions = Region.objects.all()
-#     regions_json = [region.as_dict()
-#                         for region in regions]
-#     response_data = {
-#         'regions': regions_json
-#     }
-#
-#     return HttpResponse(json.dumps(response_data),
-#                         content_type="application/json")
 
-def chart(request):
-    if 'chart_region' in request.POST:
-        print('1111')
-        # chart_region_id = request.POST['region.id']
-        cities = City.objects.filter(region_id=request.POST['chart_region'])
-        cities_list = [city.as_dict()
+def load_chart(request):
+    cities = City.objects.filter(region_id=request.GET['region'])
+    cities_list = [city.as_dict()
                         for city in cities]
-        # cities_dict = {
-        #     'cities': cities_list
-        # }
+    cities_json = json.dumps(cities_list)
 
-        cities_json = json.dumps(cities_list)
-        regions = Region.objects.all()
-        context = {'cities_json': cities_json, 'regions': regions, 'cities': cities}
-        template = 'index.html'
-        print(cities_json)
-        print(type(cities_json))
+    return HttpResponse(cities_json,
+                        content_type="application/json")
 
-        return render (request, template, context)

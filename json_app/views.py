@@ -64,8 +64,9 @@ def open_file(request):
 
 def load_chart(request):
     cities = City.objects.filter(region_id=request.GET['region'])
-    cities_list = [city.as_dict()
+    cities_list_temp = [city.as_dict()
                         for city in cities]
+    cities_list = sorted (cities_list_temp, reverse=True)
     cities_json = json.dumps(cities_list)
 
     return HttpResponse(cities_json,

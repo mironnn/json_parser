@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d477566-7d0b-4aeb-a713-86fad2b950fe" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json_app/templates/base.html" afterPath="$PROJECT_DIR$/json_app/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json_app/static/js/chart.js" afterPath="$PROJECT_DIR$/json_app/static/js/chart.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json_app/templates/index.html" afterPath="$PROJECT_DIR$/json_app/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_json/urls.py" afterPath="$PROJECT_DIR$/my_json/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json_app/views.py" afterPath="$PROJECT_DIR$/json_app/views.py" />
     </list>
     <ignored path="src.iws" />
@@ -41,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/json_app/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1185">
-              <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.7893916" vertical-offset="514" max-vertical-offset="1200">
+              <caret line="68" column="57" selection-start-line="68" selection-start-column="57" selection-end-line="68" selection-end-column="57" />
               <folding>
                 <element signature="e#0#65#0" expanded="true" />
               </folding>
@@ -75,10 +71,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chart.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="chart.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/json_app/static/js/chart.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7020281" vertical-offset="0" max-vertical-offset="750">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="750">
               <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
               <folding />
             </state>
@@ -115,9 +111,9 @@
         <option value="$PROJECT_DIR$/json_app/models.py" />
         <option value="$PROJECT_DIR$/json_app/static/js/chart.js" />
         <option value="$PROJECT_DIR$/my_json/urls.py" />
-        <option value="$PROJECT_DIR$/json_app/views.py" />
         <option value="$PROJECT_DIR$/json_app/templates/base.html" />
         <option value="$PROJECT_DIR$/json_app/templates/index.html" />
+        <option value="$PROJECT_DIR$/json_app/views.py" />
       </list>
     </option>
   </component>
@@ -925,16 +921,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/json_app/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1185">
-          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#65#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/json_app/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.09804" vertical-offset="811" max-vertical-offset="1545">
@@ -955,9 +941,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/json_app/static/js/chart.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7020281" vertical-offset="0" max-vertical-offset="750">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="750">
           <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json_app/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7893916" vertical-offset="514" max-vertical-offset="1200">
+          <caret line="68" column="57" selection-start-line="68" selection-start-column="57" selection-end-line="68" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#65#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

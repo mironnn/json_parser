@@ -1,0 +1,1 @@
+web: gunicorn my_json.wsgi --log-file -

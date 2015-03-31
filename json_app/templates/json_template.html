@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+<p>Please create json file according to:<p>
+    <p>{"Region": {"City": area, "City_n": area}, "Region_n": {"City": area, "City_n": area}}.</p>
+<br>
+
+<div>
+    <h4>Example</h4>
+    <div class="panel panel-default">
+      <div class="panel-body">
+<p>{"Kyiv_region":{"Kyiv":847.46,	"Borispil":37.01, "Irpen":37.05},</p>
+  <p>"Kharkiv_region":{"Kharkiv":350, "Izyum":41, "Chuguev":12.8},</p>
+  <p>"Dnepropetrivsk_region":{"Dnepropetrivsk":405, "Kryvoy_Rig":415, "Dneprodzerjinsk":138}
+}</p>
+
+      </div>
+    </div>
+  </div>
+
+
+
+{% endblock %}
+

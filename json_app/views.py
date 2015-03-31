@@ -14,6 +14,12 @@ def index(request):
     return render(request, template, context)
 
 
+def json_template(request):
+    context = {}
+    template = "json_template.html"
+    return render(request, template, context)
+
+
 def open_file(request):
     if 'form_object' in request.FILES:
         form = form_file(request.POST, request.FILES)
